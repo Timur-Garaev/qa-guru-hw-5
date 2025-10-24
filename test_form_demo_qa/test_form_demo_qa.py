@@ -30,6 +30,7 @@ def test_filling_out_and_submitting_the_form(open_browser):
 
     browser.element('.modal-content').should(be.existing)
     browser.all('.table-dark tbody tr').should(have.size(10))
+
     # browser.element('.modal-content').element('table').all('tr').all('td').even.should(
     #     have.exact_texts(
     #         'Masha Maria',
